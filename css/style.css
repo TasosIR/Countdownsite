@@ -1,0 +1,194 @@
+.space-girl{
+    width: 100vw;
+    height: 100vh;
+    background-image:  url(images/space-girl-with-balloons.mp4);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+
+}
+.content{
+    text-align: center;
+   
+}
+.content h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 70px;
+    margin-top: 500px;
+
+}
+.p{
+    font-size: 50px;
+}
+
+    
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}   
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.launch-time{
+    color: #fff;
+    display: flex;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+    
+}
+
+
+
+.media{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+}
+
+li{
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: 5s;
+    cursor: pointer;
+}
+
+li:hover{
+    color: #292929; 
+    border: 1px solid #292929;
+    transition: .5s;
+
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}	
+.modal-newsletter {	
+    color: #999;
+    width: 625px;
+    font-size: 15px;
+    margin: 30px auto;
+}
+.modal-newsletter .modal-content {
+    padding: 30px;
+    border-radius: 0;		
+    border: none;
+}
+.modal-newsletter .modal-header {
+    border-bottom: none;   
+    position: relative;
+    border-radius: 0;
+}
+.modal-newsletter h4 {
+    color: #000;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+.modal-newsletter .close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    text-shadow: none;
+    opacity: 0.3;
+    font-size: 24px;
+}
+.modal-newsletter .close:hover {
+    opacity: 0.8;
+}
+.modal-newsletter .icon-box {
+    color: #7265ea;		
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.modal-newsletter .icon-box i {
+    font-size: 110px;
+}
+.modal-newsletter .form-control, .modal-newsletter .btn {
+    min-height: 46px;
+    border-radius: 0;
+}
+.modal-newsletter .form-control {
+    box-shadow: none;
+    border-color: #dbdbdb;
+}
+.modal-newsletter .form-control:focus {
+    border-color: #f95858;
+    box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
+}
+.modal-newsletter .btn {
+    color: #fff;
+    background: #f95858;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    padding: 6px 20px;
+    min-width: 150px;
+    margin-left: 6px !important;
+    border: none;
+}
+.modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
+    box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
+    background: #f72222;
+    outline: none;
+}
+.modal-newsletter .input-group {
+    margin-top: 30px;
+}
+.hint-text {
+    margin: 100px auto;
+    text-align: center;
+}
+
+
+#text-area-container {
+    display: none; /* hide the text area by default */
+  }
+
+.modal-contact{
+    width: 60%;
+    padding: 45px;
+    border-radius: 0;
+    position: absolute;
+    text-align: initial;
+    transform: translate(-50%,-50%);
+
+}

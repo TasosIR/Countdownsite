@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="css/fontawesome.css" rel="stylesheet">
+      <link href="css/brands.css" rel="stylesheet">
+      <link href="css/solid.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+
+    <title>CountDown site</title>
+    <script>
+      $(document).ready(function(){
+        $("#myModal").modal('show');
+      });
+    </script>
+  </head>
+  <body>
+       <div class="space-girl">
+
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="images/Space-Girl-with-Balloons.mp4" type="video/mp4">
+        </video>
+        
+
+    <div class="content">
+      <h1> <span style="color: aqua;"> WEBSITE </span> IS ALMOST READY  </h1>
+      <p style="color:#fff;"> Our Webite is under construction. We'll be here soon with our new awesome. </p>
+      <br/>
+      <p style="color:#fff;"> Subscribe to be notified.</p>
+           <div class="launch-time" style="margin-left: 875px; margin-top: 50px";>
+              <div>
+                <p id="days">00</p>
+                <span>Days</span>
+              </div>
+              <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+              </div>
+              <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+              </div>
+              <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+              </div>
+          </div>
+          <div class="mt-5">
+            <button type = "button" class = "btn btn-light bg-transparent btn-lg text-secondary" style="height: 70px; width: 220px ; " onclick        = "window.location.reload();">HOME</button>
+            <button type=  "button" class=  "btn btn-light bg-transparent btn-lg text-secondary" style="height: 70px; width: 220px ; " data-bs-toggle="modal" data-bs-target="#modalSubscriptionForm">SUBSCRIBE</button>
+            <button type = "button" class = "btn btn-light bg-transparent btn-lg text-secondary" style="height: 70px; width: 220px ; " data-bs-toggle = "modal" data-bs-target = "#Contact">CONTACT US</button>
+        </div>
+        <div id="modalSubscriptionForm" class="modal fade">
+          <div class="modal-dialog modal-newsletter">
+            <div class="modal-content">
+              <form action="/examples/actions/confirmation.php" method="post">
+                <div class="modal-header">
+                  <h4>Subscribe to our newsletter</h4>	
+                  <button type="button"  class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">					
+                  <p>Signup for our weekly newsletter to get the latest news, updates and amazing offers delivered directly in your inbox.</p>
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <span class="input-group-btn">
+                      <input type="submit" class="btn btn-primary" value="Subscribe">
+                    </span>
+                  </div>
+                </div>
+              </form>			
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="Contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-contact ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ContactLabel">Contact Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-12">
+                  
+             <div class="col-md-6">
+              <label for="vlaname" class="form-label">Name</label>
+              <input type="text" class="form-control" id="vlaname" required>
+              <div class="invalid-feedback">
+                Please input your Name.
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <label for="vlasname" class="form-label">Surame</label>
+              <input type="text" class="form-control" id="vlasname" required>
+              <div class="invalid-feedback">
+                Please input your Surname.
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <label for="vlastrname" class="form-label">Street Name</label>
+              <input type="text" class="form-control" id="vlastrname" required>
+              <div class="invalid-feedback">
+                Please input your Street Name.
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <label for="vlastrnum" class="form-label">Street Number</label>
+              <input type="text" class="form-control" id="vlastrnum" required>
+              <div class="invalid-feedback">
+                Please input your Street Number.
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <label for="vlacity" class="form-label">City</label>
+              <input type="text" class="form-control" id="vlacity" required>
+              <div class="invalid-feedback">
+                Please input your City.
+              </div>
+            </div>
+            
+             <div class="col-md-6">
+              <label for="vlarea" class="form-label">Area</label>
+              <input type="text" class="form-control" id="vlarea" required>
+              <div class="invalid-feedback">
+                Please input your Area.
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="FamStat" class="form-label">Family Status</label>
+               <select class="form-select" aria-label="Default select example" id="FamStat" required>
+               <option selected></option>
+               <option value="1">Married</option>
+               <option value="2">Unmarried</option>
+               </select>
+              <div class="invalid-feedback">
+                Please input your Family Status.
+              </div>
+            </div> 
+
+            <div class="col-md-6">
+              <label>
+                <input type="checkbox" id="show-selector">
+                Children
+              </label>
+              
+              <div id="selector-container">
+                <label for="selector">Number of Children:</label>
+                <select id="selector">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="dob">Date of Birth:</label>
+              <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD">
+            </div>
+
+            <div class="col-md-6">
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender" onchange="showMilitaryFields()">
+                <option value="">Please select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <div id="military-fields" style="display: none;">
+                <label for="military-service">Military Service:</label>
+                <select id="military-service" name="military-service">
+                  <option value="">Please select...</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                <br>
+                <label for="dismissal-date">Dismissal Date:</label>
+                <input type="date" id="dismissal-date" name="dismissal-date">
+              </div>
+           </div>
+             
+            <div class="col-md-6">
+              <label for="credit-card">Apply for a credit card:</label>
+              <input type="checkbox" id="credit-card" name="credit-card">
+              <br>
+              <label for="loan">Apply for a loan:</label>
+              <input type="checkbox" id="loan" name="loan">
+            </div>
+
+            <div class="col-md-6">
+              <label for="education">Select your highest level of education:</label>
+              <select id="education" name="education">
+                <option value="secondary-school">Secondary School</option>
+                <option value="high-school">High School</option>
+                <option value="technological-school">Technological School</option>
+                <option value="technical-high-school">Technical High School</option>
+                <option value="university">University</option>
+              </select>
+            </div>
+
+
+            <div class="col-12 mt-5">
+              <button class="btn btn-primary" style="background-color: red; border: red; border-radius: 0;" onclick type="submit">Submit form</button>
+            </div>
+            
+          </form>
+              
+          </div>
+         </div>   
+        
+        </div>
+       </div>
+     </div>
+        <div class="media">
+          <ul>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+     
+  </div>
+</div>
+
+<script>
+    var CountDownDate = new Date ("May 1, 2023 00:00:00").getTime();
+    var x = setInterval(function(){
+          var now = new Date().getTime();
+          var distance = CountDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+          if(distance < 0){
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";  
+          }
+    },1000);
+
+
+
+    
+	
+
+</script>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+             
+      })
+  })()
+  </script>
+
+
+<script>
+   const showSelectorCheckbox = document.querySelector('#show-selector');
+      const selectorContainer = document.querySelector('#selector-container');
+      const textAreaContainer = document.querySelector('#text-area-container');
+      
+      showSelectorCheckbox.addEventListener('change', () => {
+        if (showSelectorCheckbox.checked) {
+          selectorContainer.style.display = 'block'; // show the selector
+        } else {
+          selectorContainer.style.display = 'none'; // hide the selector
+        }
+      });
+
+      const selector = document.querySelector('#selector');
+      
+      selector.addEventListener('change', () => {
+        const numOptions = selector.value;
+        
+        if (numOptions > 0) {
+          textAreaContainer.style.display = 'block'; // show the text area
+        } else {
+          textAreaContainer.style.display = 'none'; // hide the text area
+        }
+      });
+</script>
+
+
+<script>
+  function showMilitaryFields() {
+    var genderSelect = document.getElementById("gender");
+    var militaryFields = document.getElementById("military-fields");
+    var militaryServiceSelect = document.getElementById("military-service");
+    var dismissalDateInput = document.getElementById("dismissal-date");
+    if (genderSelect.value === "male") {
+      militaryFields.style.display = "block";
+      militaryServiceSelect.required = true;
+      dismissalDateInput.required = true;
+    } else {
+      militaryFields.style.display = "none";
+      militaryServiceSelect.required = false;
+      dismissalDateInput.required = false;
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
